@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart School · Gestión de Feed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-contenedor">
+    <header class="encabezado-pantalla">
+      <img src="foto1.png" alt="Foto de perfil del usuario" class="avatar-usuario">
+      <div class="titulo-seccion">
+        <h1>Gestión de Feed</h1>
+        <p class="subtitulo">COMUNICADOS & AVISOS</p>
+      </div>
+      <button type="button" class="btn-icono" aria-label="Notificaciones">🔔</button>
+    </header>
+    <main class="contenido-principal">
+      <button type="button" class="btn-crear">+ Crear Publicación</button>
+      <section class="seccion-filtros">
+        <button type="button" class="filtro activo">Todas</button>
+        <button type="button" class="filtro">Activas</button>
+        <button type="button" class="filtro">Borradores</button>
+      </section>
+      <section class="lista-publicaciones">
+        <article class="tarjeta-publicacion">
+          <header class="cabecera-tarjeta">
+            <span class="badge badge-general">General</span>
+            <span class="badge badge-activa">Activa</span>
+          </header>
+          <h2>Cambio de horario - Mañana jueves</h2>
+          <p>Por motivo de la jornada pedagógica, las clases del jueves finalizarán...</p>
+          <footer class="pie-tarjeta">
+            <span class="estado-lectura">Leído por 124 alumnos</span>
+            <div class="acciones-tarjeta">
+              <button type="button" class="btn-accion" aria-label="Editar">✏️</button>
+              <button type="button" class="btn-accion" aria-label="Eliminar">🗑️</button>
+            </div>
+          </footer>
+        </article>
+        <article class="tarjeta-publicacion">
+          <header class="cabecera-tarjeta">
+            <span class="badge badge-urgente">Urgente</span>
+            <span class="badge badge-borrador">Borrador</span>
+          </header>
+          <h2>Inscripción Talleres Robótica</h2>
+          <p>Últimos cupos disponibles para talleres extracurriculares de robótica...</p>
+          <footer class="pie-tarjeta">
+            <span class="estado-lectura">No publicado aún</span>
+            <div class="acciones-tarjeta">
+              <button type="button" class="btn-accion" aria-label="Editar">✏️</button>
+              <button type="button" class="btn-accion" aria-label="Eliminar">🗑️</button>
+            </div>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <nav class="barra-navegacion">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icono-nav">🏠</span>
+            <span>Panel</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="activo">
+            <span class="icono-nav">📡</span>
+            <span>Feed</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icono-nav">📅</span>
+            <span>Eventos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icono-nav">👤</span>
+            <span>Mi Perfil</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+</body>
+</html>
