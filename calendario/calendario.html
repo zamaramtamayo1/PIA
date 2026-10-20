@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Smart School · Calendario</title>
+    <!-- Enlace a la hoja de estilos externa (Clase 5) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal de la aplicación (Clase 2 y 6) -->
+    <div class="app-contenedor">
+
+        <!-- Encabezado superior (Clase 2, 3 y 7) -->
+        <header class="encabezado-pantalla">
+            <img src="foto1.png" alt="Foto de perfil del estudiante" class="avatar-usuario">
+            <h1 class="titulo-pantalla">Calendario</h1>
+            <button type="button" class="btn-icono">🔔</button>
+        </header>
+
+        <!-- Contenido principal semántico (Clase 2) -->
+        <main class="contenido-principal">
+
+            <!-- Sección del Calendario Mensual (Clase 2, 6 y 7) -->
+            <section class="tarjeta-calendario">
+
+                <!-- Cabecera del mes con controles de navegación -->
+                <div class="cabecera-mes">
+                    <h2>Agosto 2026</h2>
+                    <div class="controles-mes">
+                        <button type="button" class="btn-flecha">&lt;</button>
+                        <button type="button" class="btn-flecha">&gt;</button>
+                    </div>
+                </div>
+
+                <!-- Días de la semana -->
+                <div class="dias-semana-header">
+                    <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                </div>
+
+                <!-- Matriz de días del mes (Clase 7 Flexbox) -->
+                <div class="grid-calendario">
+                    <!-- Semana 1 -->
+                    <div class="fila-semana">
+                        <div class="dia pasado">27</div>
+                        <div class="dia pasado">28</div>
+                        <div class="dia pasado">29</div>
+                        <div class="dia pasado">30</div>
+                        <div class="dia pasado">31</div>
+                        <div class="dia con-punto punto-azul">1</div>
+                        <div class="dia">2</div>
+                    </div>
+
+                    <!-- Semana 2 -->
+                    <div class="fila-semana">
+                        <div class="dia con-punto punto-azul">3</div>
+                        <div class="dia con-punto punto-morado">4</div>
+                        <div class="dia">5</div>
+                        <div class="dia con-punto punto-naranja">6</div>
+                        <div class="dia">7</div>
+                        <div class="dia">8</div>
+                        <div class="dia">9</div>
+                    </div>
+
+                    <!-- Semana 3 -->
+                    <div class="fila-semana">
+                        <div class="dia con-punto punto-doble">10</div>
+                        <div class="dia">11</div>
+                        <div class="dia">12</div>
+                        <div class="dia">13</div>
+                        <div class="dia con-punto punto-naranja">14</div>
+                        <div class="dia">15</div>
+                        <div class="dia">16</div>
+                    </div>
+
+                    <!-- Semana 4 -->
+                    <div class="fila-semana">
+                        <div class="dia con-punto punto-azul">17</div>
+                        <div class="dia">18</div>
+                        <div class="dia con-punto punto-morado">19</div>
+                        <div class="dia">20</div>
+                        <div class="dia">21</div>
+                        <div class="dia con-punto punto-naranja">22</div>
+                        <div class="dia">23</div>
+                    </div>
+
+                    <!-- Semana 5 -->
+                    <div class="fila-semana">
+                        <div class="dia activo">24</div>
+                        <div class="dia">25</div>
+                        <div class="dia con-punto punto-naranja">26</div>
+                        <div class="dia">27</div>
+                        <div class="dia">28</div>
+                        <div class="dia">29</div>
+                        <div class="dia">30</div>
+                    </div>
+                </div>
+
+                <!-- Leyenda de colores del calendario (Clase 6 y 7) -->
+                <div class="leyenda-calendario">
+                    <span class="item-leyenda"><span class="dot dot-azul"></span> Clases</span>
+                    <span class="item-leyenda"><span class="dot dot-morado"></span> Tareas</span>
+                    <span class="item-leyenda"><span class="dot dot-naranja"></span> Eventos</span>
+                </div>
+
+            </section>
+
+            <!-- Sección de Eventos del Día (Clase 2 y 7) -->
+            <section class="bloque-eventos">
+                <div class="cabecera-seccion">
+                    <h2>Eventos del día (24)</h2>
+                    <a href="#" class="enlace-ver-horario">Ver horario</a>
+                </div>
+
+                <div class="lista-eventos-dia">
+                    <!-- Tarjeta 1: Examen -->
+                    <article class="tarjeta-evento-dia">
+                        <div class="info-evento">
+                            <h3>Examen de Matemáticas</h3>
+                            <p>08:00 - 09:30 · Evaluación del bloque 3: Funciones algebraicas y límites</p>
+                        </div>
+                        <span class="badge badge-examen">Examen</span>
+                    </article>
+
+                    <!-- Tarjeta 2: Tarea -->
+                    <article class="tarjeta-evento-dia">
+                        <div class="info-evento">
+                            <h3>Historia - Tarea Pendiente</h3>
+                            <p>11:00 - 12:30 · Entrega del reporte del capítulo 4 antes del fin de clase</p>
+                        </div>
+                        <span class="badge badge-tarea">Tarea Due</span>
+                    </article>
+
+                    <!-- Tarjeta 3: Clase Extra -->
+                    <article class="tarjeta-evento-dia">
+                        <div class="info-evento">
+                            <h3>Taller de Programación</h3>
+                            <p>14:00 - 15:30 · Laboratorio de sistemas</p>
+                        </div>
+                        <span class="badge badge-clase">Clase Extra</span>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Barra de navegación inferior (Clase 2 y 7) -->
+        <nav class="barra-navegacion">
+            <ul>
+                <li>
+                    <a href="../inicio/inicio.html">
+                        <span class="icono-nav">🏠</span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../feed/feed.html">
+                        <span class="icono-nav">📡</span>
+                        <span>Feed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="activo">
+                        <span class="icono-nav">📅</span>
+                        <span>Calendario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../perfil/perfil.html">
+                        <span class="icono-nav">👤</span>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+</body>
+
+</html>
