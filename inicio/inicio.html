@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart School Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-contenedor">
+        <header class="encabezado-dashboard">
+            <div class="barra-superior">
+                <img src="foto1.png" alt="Foto de perfil del estudiante" class="avatar-usuario">
+                <span class="nombre-app">Smart School</span>
+                <button type="button" class="btn-icono" aria-label="Notificaciones"></button>
+            </div>
+            <div class="saludo-usuario">
+                <h1>Hola, estudiante</h1>
+                <p class="fecha-actual">Hoy es miércoles, 24 de octubre</p>
+            </div>
+            <nav class="dias-semana">
+                <div class="dia-item"><span>Lun</span><strong>22</strong></div>
+                <div class="dia-item"><span>Mar</span><strong>23</strong></div>
+                <div class="dia-item activo"><span>Mié</span><strong>24</strong></div>
+                <div class="dia-item"><span>Jue</span><strong>25</strong></div>
+                <div class="dia-item"><span>Vie</span><strong>26</strong></div>
+                <div class="dia-item"><span>Sáb</span><strong>27</strong></div>
+            </nav>
+        </header>
+        <main class="contenido-principal">
+            <section class="bloque-seccion">
+                <header class="cabecera-seccion">
+                    <h2>Hoy</h2>
+                    <a href="#" class="enlace-ver-todo">Ver todo</a>
+                </header>
+                <div class="lista-horarios">
+                    <article class="tarjeta-horario">
+                        <div class="info-clase">
+                            <strong>Matemáticas</strong>
+                            <span>8:00 9:30</span>
+                        </div>
+                        <span class="badge badge-hoy">Hoy</span>
+                    </article>
+                    <article class="tarjeta-horario">
+                        <div class="info-clase">
+                            <strong>Historia</strong>
+                            <span>10:00 11:30</span>
+                        </div>
+                        <span class="badge badge-hoy">Hoy</span>
+                    </article>
+                    <article class="tarjeta-horario">
+                        <div class="info-clase">
+                            <strong>Ciencias</strong>
+                            <span>13:00 14:30</span>
+                        </div>
+                        <span class="badge badge-hoy">Hoy</span>
+                    </article>
+                </div>
+            </section>
+            <section class="bloque-seccion">
+                <header class="cabecera-seccion">
+                    <h2>Tareas pendientes</h2>
+                    <a href="#" class="enlace-ver-todo">Ver todo</a>
+                </header>
+                <div class="lista-tareas">
+                    <article class="tarjeta-tarea">
+                        <div class="detalle-tarea">
+                            <h3>Matemáticas Práctica 4</h3>
+                            <p>Entrega: hoy 23:59</p>
+                        </div>
+                        <span class="badge badge-alta">Alta</span>
+                    </article>
+                    <article class="tarjeta-tarea">
+                        <div class="detalle-tarea">
+                            <h3>Historia Resumen cap. 3</h3>
+                            <p>Entrega: mañana 08:00</p>
+                        </div>
+                        <span class="badge badge-media">Media</span>
+                    </article>
+                    <article class="tarjeta-tarea">
+                        <div class="detalle-tarea">
+                            <h3>Ciencias Investigación</h3>
+                            <p>Entrega: viernes 17:00</p>
+                        </div>
+                        <span class="badge badge-baja">Baja</span>
+                    </article>
+                </div>
+            </section>
+            <section class="bloque-seccion">
+                <header class="cabecera-seccion">
+                    <h2>Próximos eventos</h2>
+                    <a href="#" class="enlace-ver-todo">Ver todo</a>
+                </header>
+                <div class="lista-eventos">
+                    <article class="tarjeta-evento">
+                        <span class="icono-evento"></span>
+                        <div class="detalle-evento">
+                            <h3>Feria de Ciencias</h3>
+                            <p>26 de octubre 09:00 12:00</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta-evento">
+                        <span class="icono-evento"></span>
+                        <div class="detalle-evento">
+                            <h3>Reunión de padres</h3>
+                            <p>30 de octubre 18:30</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <nav class="barra-navegacion">
+            <ul>
+                <li>
+                    <a href="../inicio/inicio.html" class="activo">
+                        <span class="icono-nav">🏠</span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../feed/feed.html">
+                        <span class="icono-nav">📡</span>
+                        <span>Feed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../calendario/calendario.html">
+                        <span class="icono-nav">📅</span>
+                        <span>Calendario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../perfil/perfil.html">
+                        <span class="icono-nav">👤</span>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
