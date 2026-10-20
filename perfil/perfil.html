@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Smart School · Mi Perfil</title>
+  <!-- Enlace a la hoja de estilos externa (Clase 5) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Contenedor principal de la aplicación (Clase 2 y 6) -->
+  <div class="app-contenedor">
+
+    <!-- Encabezado superior (Clase 2, 3 y 7) -->
+    <header class="encabezado-pantalla">
+      <img src="foto1.png" alt="Foto de perfil miniatura" class="avatar-usuario">
+      <h1 class="titulo-pantalla">Mi Perfil</h1>
+      <button type="button" class="btn-icono">🔔</button>
+    </header>
+
+    <!-- Contenido principal semántico (Clase 2) -->
+    <main class="contenido-principal">
+
+      <!-- Tarjeta principal de perfil (Clase 2, 3 y 6) -->
+      <section class="tarjeta-perfil">
+        <div class="avatar-contenedor">
+          <img src="foto1.png" alt="Foto de perfil del estudiante" class="avatar-grande">
+        </div>
+
+        <h2 class="nombre-estudiante">Estudiante</h2>
+        <p class="subtitulo-perfil">11-3 · Estudiante de Desarrollo de Software</p>
+        <p class="matricula-perfil">Matrícula: #2026-0892</p>
+
+        <span class="badge badge-colegio">Colegio Javiera Londoño</span>
+
+        <!-- Fila de estadísticas (Clase 6 y 7 Flexbox) -->
+        <div class="cajas-estadisticas">
+          <div class="caja-stat">
+            <span class="etiqueta-stat">ASISTENCIA</span>
+            <strong class="valor-stat">94%</strong>
+          </div>
+          <div class="caja-stat">
+            <span class="etiqueta-stat">PROMEDIO</span>
+            <strong class="valor-stat">8.8</strong>
+          </div>
+          <div class="caja-stat">
+            <span class="etiqueta-stat">TAREAS COMPL.</span>
+            <strong class="valor-stat">32/34</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloque de ajustes generales (Clase 2, 6 y 7) -->
+      <section class="bloque-ajustes">
+        <h2>Ajustes generales</h2>
+
+        <div class="lista-ajustes">
+
+          <article class="opcion-ajuste">
+            <span class="icono-opcion">🔔</span>
+            <div class="texto-opcion">
+              <h3>Notificaciones</h3>
+              <p>Sonidos, avisos y alertas de tareas</p>
+            </div>
+            <span class="flecha-opcion">&gt;</span>
+          </article>
+
+          <article class="opcion-ajuste">
+            <span class="icono-opcion">⚙️</span>
+            <div class="texto-opcion">
+              <h3>Preferencias de Tema</h3>
+              <p>Claro, oscuro o de sistema</p>
+            </div>
+            <span class="flecha-opcion">&gt;</span>
+          </article>
+
+          <article class="opcion-ajuste">
+            <span class="icono-opcion">🌐</span>
+            <div class="texto-opcion">
+              <h3>Idioma de la App</h3>
+              <p>Español (ES)</p>
+            </div>
+            <span class="flecha-opcion">&gt;</span>
+          </article>
+
+          <article class="opcion-ajuste opcion-cerrar-sesion">
+            <span class="icono-opcion">🚪</span>
+            <div class="texto-opcion">
+              <h3>Cerrar Sesión</h3>
+              <p>Desconectar de tu cuenta</p>
+            </div>
+            <span class="flecha-opcion">&gt;</span>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Barra de navegación inferior (Clase 2 y 7) -->
+    <nav class="barra-navegacion">
+      <ul>
+        <li>
+          <a href="../inicio/inicio.html">
+            <span class="icono-nav">🏠</span>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="../feed/feed.html">
+            <span class="icono-nav">📡</span>
+            <span>Feed</span>
+          </a>
+        </li>
+        <li>
+          <a href="../calendario/calendario.html">
+            <span class="icono-nav">📅</span>
+            <span>Calendario</span>
+          </a>
+        </li>
+        <li>
+          <a href="../perfil/perfil.html" class="activo">
+            <span class="icono-nav">👤</span>
+            <span>Perfil</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+</body>
+
+</html>
